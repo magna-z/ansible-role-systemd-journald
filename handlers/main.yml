@@ -1,0 +1,9 @@
+---
+- name: systemd-tmpfiles create
+  ansible.builtin.shell: systemd-tmpfiles --create --prefix /var/log/journal
+
+- name: restart systemd-journald service
+  ansible.builtin.systemd:
+    name: systemd-journald
+    enabled: true
+    state: restarted
