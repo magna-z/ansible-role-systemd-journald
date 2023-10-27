@@ -2,8 +2,8 @@
 - name: check mandatory variables
   ansible.builtin.assert:
     that:
-    - systemd_journald_configs is defined
-    - systemd_journald_configs | length > 0
+      - systemd_journald_configs is defined
+      - systemd_journald_configs | length > 0
     quiet: true
 
 - name: ensure data directory

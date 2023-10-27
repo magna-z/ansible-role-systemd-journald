@@ -1,10 +1,11 @@
 ---
 dependencies: []
 galaxy_info:
-  description: Configure systemd-journald
+  description: Configure systemd-journald.
   author: Maxim Zalysin
   license: MIT
-  min_ansible_version: "2.14"
   platforms:
-  - name: Debian
-    version: [any]
+    - name: Debian
+      version: [any]
+    - name: Ubuntu
+      version: [any]
